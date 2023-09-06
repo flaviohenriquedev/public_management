@@ -5,7 +5,7 @@ interface SideMenuInterface {
 }
 
 export const Root = tw.div`
-    pt-14
+    pt-12
     h-full
 `;
 

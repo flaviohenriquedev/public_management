@@ -13,7 +13,7 @@ export const Container = tw.header`
     z-10
     w-full
     top-0
-    h-14
+    h-12
 `;
 
 export const ClientContainer = tw.div`
