@@ -16,3 +16,5 @@ export type SubMenuItem = {
 export type Theme = {
     description: string;
 };
+
+export type TButton = 'primary' | 'success' | 'warning' | 'danger'

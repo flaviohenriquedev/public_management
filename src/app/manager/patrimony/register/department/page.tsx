@@ -1,14 +1,16 @@
 import { PageContent } from "@/components/containers/page_content";
-import { Department } from "@/components/shared_entities/department/Department";
+import { Department } from "@/components/shared_entities/department";
 
 const PA_DepartmentPage = () => {
     return (
         <PageContent.Root>
             <PageContent.Title />
             <PageContent.Children>
-                <Department />
+                <Department.Root>
+                    <Department.Form />
+                    <Department.Footer />
+                </Department.Root>
             </PageContent.Children>
-            <PageContent.Footer />
         </PageContent.Root>
     );
 };

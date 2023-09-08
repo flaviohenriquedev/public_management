@@ -1,4 +1,6 @@
-export const Department = () => {
+
+
+const DepartmentForm = () => {
     return (
         <div>
             <form className="flex flex-col gap-3">
@@ -46,4 +48,6 @@ export const Department = () => {
             </form>
         </div>
     );
-};
+}
+
+export default DepartmentForm;

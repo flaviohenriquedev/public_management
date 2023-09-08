@@ -26,30 +26,3 @@ export const Children = tw.div`
     shadow-lg
 `;
 
-export const Footer = tw.footer`
-    flex
-    justify-end
-    items-center
-    w-[50rem]
-    h-14
-    gap-4
-    px-4
-    rounded-lg
-    bg-slate-300
-
-    fixed
-    bottom-0
-    right-0
-`;
-
-export const Button = tw.button`
-    flex
-    justify-center
-    items-center
-    w-30
-    h-9
-    rounded-lg
-    bg-red-700
-    text-white
-    p-5
-`;
