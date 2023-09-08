@@ -1,52 +1,63 @@
+'use client'
 
+import { Input } from "@/components/data_input/input";
+import LabelContainer from "@/components/data_input/label/LabelContainer";
+import Select from "@/components/data_input/select/Select";
+import { TOption } from "@/types/Global";
+
+export const DepartamentoSuperior: TOption[] = [
+    {
+        value: 'Departamento 1',
+        description: 'Departamento 1'
+    },
+    {
+        value: 'Departamento 2',
+        description: 'Departamento 2'
+    },
+    {
+        value: 'Departamento 3',
+        description: 'Departamento 3'
+    }
+]
 
 const DepartmentForm = () => {
+
+    function selectDepartment(value: string) {
+        console.log(value)
+    }
+
     return (
         <div>
             <form className="flex flex-col gap-3">
                 <div className="flex gap-3">
-                    <label>
-                        <h1 className="pl-1 text-[8pt]">Código:</h1>
-                        <input
-                            type="text"
-                            className="border border-solid outline-none px-2 rounded-md w-24"
-                        />
-                    </label>
+                    <LabelContainer title="Código:">
+                        <Input type="text" />
+                    </LabelContainer>
 
-                    <label>
-                        <h1 className="pl-1 text-[8pt]">Código INEP:</h1>
-                        <input
-                            type="text"
-                            className="border border-solid outline-none px-2 rounded-md w-24"
-                        />
-                    </label>
+                    <LabelContainer title="Código INEP:">
+                        <Input type="text" />
+                    </LabelContainer>
 
-                    <label>
-                        <h1 className="pl-1 text-[8pt]">Prazo de Análise:</h1>
-                        <input
-                            type="text"
-                            className="border border-solid outline-none px-2 rounded-md w-24"
-                        />
-                    </label>
+                    <LabelContainer title="Prazo de Análise:">
+                        <Input type="text" />
+                    </LabelContainer>
 
-                    <label className="w-full">
-                        <h1 className="pl-1 text-[8pt]">Nome:</h1>
-                        <input
-                            type="text"
-                            className="border border-solid outline-none px-2 rounded-md w-full"
-                        />
-                    </label>
+                    <LabelContainer title="Nome:">
+                        <Input type="text" />
+                    </LabelContainer>
                 </div>
-                <label className="w-full">
-                    <h1 className="pl-1 text-[8pt]">Prazo de Análise:</h1>
-                    <select className="border border-solid outline-none w-full px-2 rounded-md">
-                        <option value="1"> Valor 1</option>
-                        <option value="2"> Valor 2</option>
-                        <option value="3"> Valor 3</option>
-                    </select>
-                </label>
-            </form>
-        </div>
+
+                <div className="flex gap-3">
+                    <LabelContainer title="Departamento Superior">
+                        <Select action={selectDepartment} options={DepartamentoSuperior} />
+                    </LabelContainer>
+
+                    <LabelContainer title="Profissional do Magistério">
+                        <Select action={selectDepartment} options={DepartamentoSuperior} />
+                    </LabelContainer>
+                </div>
+            </form >
+        </div >
     );
 }
 

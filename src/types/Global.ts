@@ -13,8 +13,8 @@ export type SubMenuItem = {
     submenu?: SubMenuItem[];
 };
 
-export type Theme = {
-    description: string;
-};
+export type Theme = TOption
 
 export type TButton = 'primary' | 'success' | 'warning' | 'danger'
+
+export type TOption = { value: string | number, description: string }

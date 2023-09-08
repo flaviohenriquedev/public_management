@@ -7,11 +7,10 @@ interface ButtonProps {
 
 export const Container = tw.button<ButtonProps>`
 
-    ${(p) => p.classButton === 'primary' ? "bg-blue-500" :
-        p.classButton === 'success' ? "bg-green-500" :
-            p.classButton === 'warning' ? "bg-yellow-500" :
-                p.classButton === 'danger' ? "bg-red-500" : "bg-blue-500"}
-
+    ${(p) => p.classButton === 'primary' ? "btn btn-info" :
+        p.classButton === 'success' ? "btn btn-success" :
+            p.classButton === 'warning' ? "btn btn-warning" :
+                p.classButton === 'danger' ? "btn btn-error" : "btn btn-info"}
 
     flex
     justify-center
@@ -28,7 +27,7 @@ export const Container = tw.button<ButtonProps>`
 
     transition-all
     duration-100
-    hover:bg-blue-600
+    
     active:scale-95
 `
 export const Title = tw.p``

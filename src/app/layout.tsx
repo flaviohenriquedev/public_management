@@ -1,7 +1,6 @@
 import { AppLayout } from "@/components/containers/app_layout";
 import { Providers } from "@/providers/Providers";
 import "./globals.css";
-import "./themes.css";
 export const metadata = {
     title: "SIGEP",
     description: "Sistema Integrado de Gestão Pública",

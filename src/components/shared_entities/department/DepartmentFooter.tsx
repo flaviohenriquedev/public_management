@@ -1,6 +1,5 @@
 import { Button } from '@/components/actions/button';
-import * as S from './style'
-import { TButton } from '@/types/Global';
+import * as S from './style';
 
 const DepartmentFooter = () => {
     return (
@@ -17,11 +16,9 @@ const DepartmentFooter = () => {
                 <Button.Title title="Editar" />
             </Button.Root>
 
-
             <Button.Root classButton="danger">
                 <Button.Title title="Cancelar" />
             </Button.Root>
-
         </S.Footer>
     );
 }

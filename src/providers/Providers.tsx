@@ -8,8 +8,10 @@ type ProvidersProps = {
 };
 export const Providers = ({ children }: ProvidersProps) => {
     return (
-        <SideMenuContextProvider>
-            <ThemeProvider defaultTheme="default">{children}</ThemeProvider>
-        </SideMenuContextProvider>
+        <ThemeProvider defaultTheme="corporate">
+            <SideMenuContextProvider>
+                {children}
+            </SideMenuContextProvider>
+        </ThemeProvider>
     );
 };

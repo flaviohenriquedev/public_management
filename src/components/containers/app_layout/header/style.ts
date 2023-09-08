@@ -13,7 +13,7 @@ export const Container = tw.header`
     z-10
     w-full
     top-0
-    h-12
+    h-16
 `;
 
 export const ClientContainer = tw.div`
@@ -21,9 +21,14 @@ export const ClientContainer = tw.div`
     text-font_header_color
 `;
 
-export const Avatar = tw.div`
-    w-10
-    h-10
-    rounded-full
-    bg-red-100
-`;
+export const AvatarContainer = tw.div`
+    avatar
+    placeholder
+    online
+`
+
+export const AvatarContent = tw.div`
+    bg-neutral-focus
+    text-neutral-content
+    rounded-full w-12
+`

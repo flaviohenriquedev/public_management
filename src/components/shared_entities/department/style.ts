@@ -9,7 +9,7 @@ export const Footer = tw.footer`
     gap-4
     px-4
     rounded-lg
-    bg-slate-300
+    bg-base-300
 
     fixed
     bottom-0

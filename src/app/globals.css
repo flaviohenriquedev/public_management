@@ -4,21 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --primary-color: #247ba0;
-    --secondary-color: #70c1b3;
-    --background-color: #fbfefb;
-    --header-bg-color: #ffffff;
-    --font-primary-color: #ffffff;
-    --font-secondary-color: #111111;
-    --font-header-color: #00293d;
-}
-
 body {
     font-family: "Poppins", sans-serif;
     height: 100vh;
-}
-
-label h1 {
-    font-family: "Red Hat Text", sans-serif;
 }
